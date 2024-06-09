@@ -1,12 +1,13 @@
 package ar.edu.unju.fi.models;
+
 public class Carrera {
     private String codigo;
     private String nombre;
     private int cantidadAnios;
-    private String estado;
+    private boolean estado;
 
     // Constructor
-    public Carrera(String codigo, String nombre, int cantidadAnios, String estado) {
+    public Carrera(String codigo, String nombre, int cantidadAnios, boolean estado) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.cantidadAnios = cantidadAnios;
@@ -38,11 +39,11 @@ public class Carrera {
         this.cantidadAnios = cantidadAnios;
     }
 
-    public String getEstado() {
+    public boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 }

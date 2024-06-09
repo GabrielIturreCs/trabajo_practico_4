@@ -24,7 +24,9 @@ public class Alumno {
         this.LU = LU;
     }
 
-    // Getters y Setters
+ 
+
+	// Getters y Setters
     public String getDni() {
         return dni;
     }
