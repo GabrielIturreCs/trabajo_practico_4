@@ -18,7 +18,13 @@ public class MainController {
         noticias.add(new Noticia("Noticia 3", "https://fi.unju.edu.ar/images/2024-Noticias/convocatoria_fiunju.jpg", "La Facultad de Ingeniería informa que se realizará un evento hacia estudiantes.", "https://www.fi.unju.edu.ar/investigacion-noticias/4546-convocatoria-de-proyectos-de-investigacion-en-la-facultad-de-ingenieria-participa-y-desarrolla-tu-potencial.html"));
 
         model.addAttribute("noticias", noticias);
+        model.addAttribute("titulo", "Inicio");
         return "index";
+    }
+    @GetMapping("/inicio")
+    public String getIndexPage(Model model) {
+    	model.addAttribute("titulo","Inicio");
+    	return "main";
     }
 
     public static class Noticia {
